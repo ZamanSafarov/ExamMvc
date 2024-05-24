@@ -11,5 +11,6 @@ namespace Core.RepAbstracts
     public interface ISettingRepository:IGenericRepository<Setting>
     {
         Task<IPagedList<Setting>> GetPagedSettingsAsync(int pageIndex, int pageSize);
+        Task<Dictionary<string, string>> GetSettingsAsync();
     }
 }

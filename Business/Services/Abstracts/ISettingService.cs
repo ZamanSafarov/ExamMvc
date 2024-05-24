@@ -16,5 +16,6 @@ namespace Business.Services.Abstracts
         Setting GetSetting(Func<Setting, bool>? func = null);
         List<Setting> GetAllSetting(Func<Setting, bool>? func = null);
         Task<IPagedList<Setting>> GetPagedSettingsAsync(int pageIndex, int pageSize);
+        Task<Dictionary<string, string>> GetSettingsAsync();
     }
 }

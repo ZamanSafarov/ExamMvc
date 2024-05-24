@@ -1,6 +1,7 @@
 ﻿using Core.Models;
 using Core.RepAbstracts;
 using Data.DAL;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,12 @@ namespace Data.RepConcretes
         {
             var query = _appDbContext.Settings.Where(x => x.DeletedDate == null).AsQueryable();
             return query.ToPagedListAsync(pageIndex, pageSize);
+        }
+
+        public async Task<Dictionary<string, string>> GetSettingsAsync()
+        {
+            var setting = await _appDbContext.Settings.Where(x=>x.DeletedDate==null).ToDictionaryAsync(s=>s.Key,s=>s.Value);
+            return setting;
         }
     }
 }

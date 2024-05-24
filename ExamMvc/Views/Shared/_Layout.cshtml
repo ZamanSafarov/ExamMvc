@@ -1,4 +1,8 @@
-﻿
+﻿@using Business.Services.Concretes
+@inject SettingService settingService
+@{
+    var setting = await settingService.GetSettingsAsync();
+}
 <!DOCTYPE HTML>
 <html>
 <head>

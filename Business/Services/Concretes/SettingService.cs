@@ -51,6 +51,11 @@ namespace Business.Services.Concretes
             return _repository.GetEntity(func);
         }
 
+        public Task<Dictionary<string, string>> GetSettingsAsync()
+        {
+            return _repository.GetSettingsAsync();
+        }
+
         public void UpdateSetting(int id, Setting setting)
         {
             var oldSetting = _repository.GetEntity(x => x.DeletedDate == null && x.Id == id);
