@@ -1,6 +1,10 @@
 ﻿@using ExamMvc.ViewModels.Home
 @model HomeVm
-
+@using Business.Services.Concretes
+@inject SettingService settingService
+@{
+    var setting = await settingService.GetSettingsAsync();
+}
 <!-- ===== services ===== -->
 <section id="services">
     <div class="container">
@@ -157,7 +161,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading" style="color:#3680C1">Our Team</h2>
+                <h2 class="section-heading" style="color:#3680C1">@setting["TeamTitle"]</h2>
                 <h3 class="section-subheading text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
             </div>
         </div>
