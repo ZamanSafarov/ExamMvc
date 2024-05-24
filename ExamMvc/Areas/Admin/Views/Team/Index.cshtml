@@ -1,0 +1,47 @@
+﻿
+@model IPagedList<Team>
+@{
+    int counter = 1;
+}
+<table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>XUrl</th>
+            <th>FacebookUrl</th>
+            <th>LinkedUrl</th>
+            <th>ImageUrl</th>
+            <th>Actions</th>
+            <th>
+                <a asp-action="create" asp-controller="team" type="button" class="btn btn-outline-success">Create</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <th scope="row">@(counter++)</th>
+                <td>@item.Name</td>
+                <td>@item.Position</td>
+                <td>@item.XUrl</td>
+                <td>@item.FacebookUrl</td>
+                <td>@item.LinkedUrl</td>
+                <td><img width="40px" height="30px" src="~/uploads/teams/@item.ImageUrl" /></td>
+                <td>
+                    <a type="button" asp-action="Update" asp-controller="team" asp-route-id="@item.Id" class="btn btn-outline-warning">Update</a>
+                    <a type="button" asp-action="Delete" asp-controller="team" asp-route-id="@item.Id" class="deleteBtn btn btn-outline-danger">Delete</a>
+                </td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="pagination-container">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { pageIndex = page, pageSize = Model.PageSize}))
+</div>
