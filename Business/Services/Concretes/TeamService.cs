@@ -81,7 +81,7 @@ public class TeamService : ITeamService
         oldTeam.FacebookUrl = team.FacebookUrl;
         oldTeam.Position = team.Position;
         oldTeam.LinkedUrl = team.LinkedUrl;
-
+        oldTeam.UpdatedDate = DateTime.UtcNow.AddHours(4);
         _repository.Commit();
     }
 }

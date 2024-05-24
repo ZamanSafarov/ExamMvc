@@ -66,7 +66,7 @@ namespace Business.Services.Concretes
             }
             oldSetting.Key = setting.Key;
             oldSetting.Value = setting.Value;
-
+            oldSetting.UpdatedDate = DateTime.UtcNow.AddHours(4);
             _repository.Commit();
         }
     }
