@@ -1,0 +1,24 @@
+﻿@using Core.Models
+
+@model Setting
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form method="post" asp-action="Update">
+                <div class="mb-3">
+                    <label class="col-sm-2 col-form-label">Key</label>
+                    <input asp-for="Key" type="text" class="form-control" placeholder="Eli Gozel">
+                    <span asp-validation-for="Key" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Value</label>
+                    <input asp-for="Value" type="text" class="form-control" placeholder="Eli Gozel">
+                    <span asp-validation-for="Value" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-success">Create</button>
+                <a asp-action="Index" class="btn btn-info">Cancel</a>
+
+            </form>
+        </div>
+    </div>
+</div>

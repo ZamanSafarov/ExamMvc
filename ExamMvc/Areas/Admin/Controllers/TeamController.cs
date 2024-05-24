@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Pronia.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize(Roles = "Admin")]
     public class TeamController : Controller
     {
         private readonly ITeamService _teamService;
@@ -21,6 +21,14 @@ namespace Pronia.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index(int pageIndex = 1, int pageSize = 2)
         {
+            if (pageIndex<=0)
+            {
+                pageIndex = 1;
+            }
+            else if (pageSize<=0)
+            {
+                pageSize = 2;
+            }
             var paginatedTeams = await _teamService.GetPagedTeamsAsync(pageIndex, pageSize);
             return View(paginatedTeams);
         }
@@ -69,6 +77,10 @@ namespace Pronia.Areas.Admin.Controllers
                 return NotFound(ex.Message);
             }
             catch (FileDoesNotExsistException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }

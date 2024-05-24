@@ -1,7 +1,6 @@
 ﻿let deleteBtn = document.querySelectorAll(".deleteBtn");
 
 deleteBtn.forEach(item => item.addEventListener("click", function (e) {
-
     e.preventDefault()
 
     Swal.fire({
@@ -14,6 +13,7 @@ deleteBtn.forEach(item => item.addEventListener("click", function (e) {
         confirmButtonText: "Yes, delete it!"
     }).then((result) => {
         if (result.isConfirmed) {
+            
             let url = item.getAttribute("href")
             fetch(url)
                 .then(response => {

@@ -34,7 +34,7 @@ namespace Pronia.Areas.Admin.Controllers
                 return BadRequest(result.Errors);
             }
 
-            var roleResult = await _userManager.AddToRoleAsync(admin, "SuperAdmin");
+            var roleResult = await _userManager.AddToRoleAsync(admin, "Admin");
             if (!roleResult.Succeeded)
             {
                 return BadRequest(roleResult.Errors);
@@ -81,7 +81,7 @@ namespace Pronia.Areas.Admin.Controllers
 
             }
             var roles = await _userManager.GetRolesAsync(user);
-            if (roles.Contains("SuperAdmin"))
+            if (roles.Contains("Admin"))
             {
                 return RedirectToAction("Index", "Dashboard");
             }

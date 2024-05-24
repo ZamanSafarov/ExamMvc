@@ -6,27 +6,27 @@
         <div class="col-12">
             <form method="post" asp-action="Create" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label class="col-sm-2 col-form-label">Title</label>
-                    <input asp-for="Name" type="text" class="form-control" placeholder="Eli Gozel">
+                    <label class="col-sm-2 col-form-label">Name</label>
+                    <input asp-for="Name" type="text" class="form-control">
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
-                    <input asp-for="Position" type="text" class="form-control" placeholder=">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Position</label>
+                    <input asp-for="Position" type="text" class="form-control">
                     <span asp-validation-for="Position" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Offer</label>
+                    <label for="inputPassword" class="col-sm-2 col-form-label">XUrl</label>
                     <input asp-for="XUrl" type="text" class="form-control" placeholder="">
                     <span asp-validation-for="XUrl" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Offer</label>
+                    <label for="inputPassword" class="col-sm-2 col-form-label">FacebookUrl</label>
                     <input asp-for="FacebookUrl" type="text" class="form-control" placeholder="">
                     <span asp-validation-for="FacebookUrl" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Offer</label>
+                    <label for="inputPassword" class="col-sm-2 col-form-label">LinkedUrl</label>
                     <input asp-for="LinkedUrl" type="text" class="form-control" placeholder="">
                     <span asp-validation-for="LinkedUrl" class="text-danger"></span>
                 </div>

@@ -33,6 +33,7 @@ namespace Business.Services.Concretes
             {
                 throw new EntityNullException("Setting Not Found!");
             }
+            _repository.DeleteEntity(setting);
             _repository.Commit();
         }
 

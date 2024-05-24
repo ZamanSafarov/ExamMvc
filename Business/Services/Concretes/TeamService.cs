@@ -42,6 +42,8 @@ public class TeamService : ITeamService
         {
             throw new EntityNullException("Team Not Found!");
         }
+        _repository.DeleteEntity(team);
+        _env.ArchiveImage("uploads\\teams", team.ImageUrl);
         _repository.Commit();
     }
 

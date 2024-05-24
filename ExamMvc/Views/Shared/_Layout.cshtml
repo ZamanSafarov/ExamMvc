@@ -27,14 +27,32 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         <a class="navbar-brand page-scroll" href="#page-top">Studio</a></div>
+          <a class="navbar-brand page-scroll" href="#page-top">@setting["Phone"]</a> <span class="text-danger"> -==Bu Setting mentiqini gostermek ucundur :)</span>
+
+            </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
+           @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a class="page-scroll" asp-action="Logout" asp-controller="account">SignOut</a></li>
+                        <li><a class="page-scroll" asp-action="Logout" asp-controller="account">SignOut</a></li>
+                        <li class="text-danger">@User.Identity.Name</li>
+
+                    
+                    }
+                    else
+                    {
+
+                        <li><a class="page-scroll" asp-action="Login" asp-controller="account">Login</a></li>
+                        <li><a class="page-scroll" asp-action="Register" asp-controller="account">Register</a></li>
+                    }
+
           <li><a class="page-scroll" href="#page-top">Home</a></li>
           <li><a class="page-scroll" href="#services">Services</a></li>
           <li><a class="page-scroll" href="#port">Portfolio</a></li>
           <li><a class="page-scroll" href="#about">About</a></li>
           <li><a class="page-scroll" href="#team">Team</a></li>
-          <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div><!-- /.container-fluid -->

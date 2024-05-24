@@ -26,8 +26,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 
 builder.Services.AddScoped<ITeamRepository, TeamRepository>();
 builder.Services.AddScoped<ITeamService, TeamService>();
+builder.Services.AddScoped<ISettingRepository, SettingRepository>();
 builder.Services.AddScoped<SettingService>();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,7 +46,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllerRoute(
            name: "areas",
-           pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+           pattern: "{area:exists}/{controller=account}/{action=login}/{id?}"
          );
 app.MapControllerRoute(
     name: "default",

@@ -6569,6 +6569,18 @@
       "PackagePath": "staticwebassets\\libs\\underscore\\underscore-min.js"
     },
     {
+      "Id": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\wwwroot\\uploads\\teams\\team-04acef7a-f3c9-47fe-803a-e1662c18b4e7.png",
+      "PackagePath": "staticwebassets\\uploads\\teams\\team-04acef7a-f3c9-47fe-803a-e1662c18b4e7.png"
+    },
+    {
+      "Id": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\wwwroot\\uploads\\teams\\team-8bc381d5-0af2-4197-82f4-05c0181570fa.png",
+      "PackagePath": "staticwebassets\\uploads\\teams\\team-8bc381d5-0af2-4197-82f4-05c0181570fa.png"
+    },
+    {
+      "Id": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\wwwroot\\uploads\\teams\\team-aaafad8e-a5e5-42fb-b077-6f2d67ea2df2.png",
+      "PackagePath": "staticwebassets\\uploads\\teams\\team-aaafad8e-a5e5-42fb-b077-6f2d67ea2df2.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ExamMvc.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
