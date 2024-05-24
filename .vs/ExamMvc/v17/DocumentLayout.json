@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2C1B5FE1-E4E7-440B-B6FE-2601AA315C6C}|ExamMvc\\ExamMvc.csproj|c:\\users\\ca.r213.18\\source\\repos\\exammvc\\exammvc\\viewmodels\\account\\memberregistervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1B5FE1-E4E7-440B-B6FE-2601AA315C6C}|ExamMvc\\ExamMvc.csproj|solutionrelative:exammvc\\viewmodels\\account\\memberregistervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC60157B-52ED-41E2-92EF-BF49478B4A5A}|Business\\Business.csproj|c:\\users\\ca.r213.18\\source\\repos\\exammvc\\business\\services\\concretes\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC60157B-52ED-41E2-92EF-BF49478B4A5A}|Business\\Business.csproj|solutionrelative:business\\services\\concretes\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2C1B5FE1-E4E7-440B-B6FE-2601AA315C6C}|ExamMvc\\ExamMvc.csproj|c:\\users\\ca.r213.18\\source\\repos\\exammvc\\exammvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C1B5FE1-E4E7-440B-B6FE-2601AA315C6C}|ExamMvc\\ExamMvc.csproj|solutionrelative:exammvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C1B5FE1-E4E7-440B-B6FE-2601AA315C6C}|ExamMvc\\ExamMvc.csproj|c:\\users\\ca.r213.18\\source\\repos\\exammvc\\exammvc\\viewmodels\\account\\memberregistervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C1B5FE1-E4E7-440B-B6FE-2601AA315C6C}|ExamMvc\\ExamMvc.csproj|solutionrelative:exammvc\\viewmodels\\account\\memberregistervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C1B5FE1-E4E7-440B-B6FE-2601AA315C6C}|ExamMvc\\ExamMvc.csproj|c:\\users\\ca.r213.18\\source\\repos\\exammvc\\exammvc\\viewmodels\\home\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -194,11 +194,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "MemberRegisterVm.cs",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\ViewModels\\Account\\MemberRegisterVm.cs",
               "RelativeDocumentMoniker": "ExamMvc\\ViewModels\\Account\\MemberRegisterVm.cs",
@@ -206,11 +206,12 @@
               "RelativeToolTip": "ExamMvc\\ViewModels\\Account\\MemberRegisterVm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T06:59:32.023Z"
+              "WhenOpened": "2024-05-24T06:59:32.023Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MemberLoginVm.cs",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\ViewModels\\Account\\MemberLoginVm.cs",
               "RelativeDocumentMoniker": "ExamMvc\\ViewModels\\Account\\MemberLoginVm.cs",
@@ -222,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ExamMvc\\Controllers\\AccountController.cs",
@@ -246,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TeamService.cs",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\Business\\Services\\Concretes\\TeamService.cs",
               "RelativeDocumentMoniker": "Business\\Services\\Concretes\\TeamService.cs",
@@ -259,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SettingService.cs",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\Business\\Services\\Concretes\\SettingService.cs",
               "RelativeDocumentMoniker": "Business\\Services\\Concretes\\SettingService.cs",
@@ -267,8 +268,7 @@
               "RelativeToolTip": "Business\\Services\\Concretes\\SettingService.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAApwEQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T05:03:25.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T05:03:25.957Z"
             },
             {
               "$type": "Document",
@@ -284,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ExamMvc\\Views\\Shared\\_Layout.cshtml",
@@ -308,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ExamMvc\\Views\\Home\\Index.cshtml",
@@ -316,12 +316,11 @@
               "RelativeToolTip": "ExamMvc\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAJ8AAAAAAAAAAAAAALgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T04:26:56.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T04:26:56.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "ExamMvc\\Views\\Account\\Login.cshtml",
@@ -333,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ca.r213.18\\source\\repos\\ExamMvc\\ExamMvc\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ExamMvc\\Controllers\\HomeController.cs",
